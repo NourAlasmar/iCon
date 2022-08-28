@@ -6,7 +6,7 @@ using Nour.Services;
 
 namespace Nour.Controllers
 {
-    [Authorize]
+    
     [ApiController]
     [Route("[controller]")]
     public class BookController : ControllerBase
@@ -19,7 +19,7 @@ namespace Nour.Controllers
 
             var x = 1;
         }
-        [AllowAnonymous]
+        
         [HttpGet("GetBooks")]
         public async Task<ActionResult<List<Book>>> Get()
         {
